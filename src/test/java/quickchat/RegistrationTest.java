@@ -27,8 +27,8 @@ public class RegistrationTest {
     private static final String VALID_USERNAME = "kyl_1";
     private static final String VALID_PASSWORD = "Ch&&sec@ke99!";
     private static final String VALID_CELL_PHONE_NUMBER = "+27838968976";
-    private static final String VALID_FIRST_NAME = "Kyle";
-    private static final String VALID_LAST_NAME = "Smith";
+    private static final String VALID_FIRST_NAME = "Takalani";
+    private static final String VALID_LAST_NAME = "Mudau";
 
     // Invalid test data
     private static final String INVALID_USERNAME = "kyle!!!!!!!";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="quickchat.RegistrationTest" time="0.174" tests="21" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="quickchat.MessageTest" time="0.184" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,25 +59,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testSingleLetterFirstName" classname="quickchat.RegistrationTest" time="0.015"/>
-  <testcase name="testInvalidUsername" classname="quickchat.RegistrationTest" time="0.03"/>
-  <testcase name="testInvalidFirstName" classname="quickchat.RegistrationTest" time="0.007"/>
-  <testcase name="testFirstNameWithWhitespace" classname="quickchat.RegistrationTest" time="0.003"/>
-  <testcase name="testCellPhoneNumberJustInvalid" classname="quickchat.RegistrationTest" time="0.003"/>
-  <testcase name="testMinimumPasswordLength" classname="quickchat.RegistrationTest" time="0.007"/>
-  <testcase name="testPartialInvalidInputs" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testCellPhoneNumberWithDifferentValidFormat" classname="quickchat.RegistrationTest" time="0.02"/>
-  <testcase name="testUsernameWithoutUnderscore" classname="quickchat.RegistrationTest" time="0.009"/>
-  <testcase name="testSingleLetterLastName" classname="quickchat.RegistrationTest" time="0.007"/>
-  <testcase name="testSuccessfulRegistration" classname="quickchat.RegistrationTest" time="0.002"/>
-  <testcase name="testFirstNameWithNumbers" classname="quickchat.RegistrationTest" time="0.002"/>
-  <testcase name="testInvalidPassword" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testUsernameJustOverMaxLength" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testInvalidCellPhoneNumber" classname="quickchat.RegistrationTest" time="0.002"/>
-  <testcase name="testMaximumLengthUsername" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testNullInputs" classname="quickchat.RegistrationTest" time="0.003"/>
-  <testcase name="testLastNameWithSpecialCharacters" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testInvalidLastName" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testMinimumLengthUsername" classname="quickchat.RegistrationTest" time="0.001"/>
-  <testcase name="testPasswordMissingOneCriteria" classname="quickchat.RegistrationTest" time="0.001"/>
+  <testcase name="testValidatePayloadLength_TooLongPayload_ReturnsFailureMessageWithExcessCount" classname="quickchat.MessageTest" time="0.008"/>
+  <testcase name="testValidateRecipientNumber_InvalidFormat_ReturnsFailureMessage" classname="quickchat.MessageTest" time="0.008"/>
+  <testcase name="testSentMessage_EmptyPayload_ReturnsFailure" classname="quickchat.MessageTest" time="0.002"/>
+  <testcase name="testCreateMessageHash_WithSpecifiedData_ReturnsCorrectHash" classname="quickchat.MessageTest" time="0.013"/>
+  <testcase name="testReturnTotalMessages_NoMessagesSent_ReturnsZero" classname="quickchat.MessageTest" time="0.002"/>
+  <testcase name="testMessageConstructor_InitializesPropertiesCorrectly" classname="quickchat.MessageTest" time="0.002"/>
+  <testcase name="testSentMessage_InvalidRecipient_ReturnsFailure" classname="quickchat.MessageTest" time="0.001"/>
+  <testcase name="testValidatePayloadLength_EmptyPayload_ReturnsSuccessMessage" classname="quickchat.MessageTest" time="0.001"/>
+  <testcase name="testStoreMessage_Draft_CreatesFileWithIndex0(Path)" classname="quickchat.MessageTest" time="0.11"/>
+  <testcase name="testValidatePayloadLength_ValidPayload_ReturnsSuccessMessage" classname="quickchat.MessageTest" time="0.001"/>
+  <testcase name="testValidatePayloadLength_NullPayload_ReturnsFailureMessage" classname="quickchat.MessageTest" time="0.001"/>
+  <testcase name="testGetGeneratedIdNotification_ReturnsCorrectFormat" classname="quickchat.MessageTest" time="0.001"/>
+  <testcase name="testSentMessage_PayloadTooLong_ReturnsFailure" classname="quickchat.MessageTest" time="0.005"/>
+  <testcase name="testStoreMessage_SentMessage_CreatesFileWithCorrectIndexAndHash(Path)" classname="quickchat.MessageTest" time="0.006"/>
+  <testcase name="testValidateRecipientNumber_ValidFormat_ReturnsSuccessMessage" classname="quickchat.MessageTest" time="0.001"/>
 </testsuite>

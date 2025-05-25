@@ -134,7 +134,8 @@ public class LoginPanel extends javax.swing.JFrame {
         if (accessGranted)
         {
             JOptionPane.showMessageDialog(this, loginFeedback, "Access Granted", JOptionPane.INFORMATION_MESSAGE);
-           JOptionPane.showMessageDialog(this, "Message feature is still under development\nThank you for your patience.", "Takalani Mudau Part1", JOptionPane.INFORMATION_MESSAGE);
+            MessagePanel messagePanel = new MessagePanel();
+            messagePanel.startMessagingInteraction();
             dispose();
         }
         else

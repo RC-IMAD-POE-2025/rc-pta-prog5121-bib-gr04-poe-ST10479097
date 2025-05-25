@@ -1,6 +1,8 @@
+quickchat\Message.class
 quickchat\QuickChat.class
 quickchat\LoginPanel$1.class
 quickchat\RegistrationPanel$3.class
+quickchat\MessagePanel.class
 quickchat\RegistrationPanel.class
 quickchat\RegistrationPanel$2.class
 quickchat\Registration.class
