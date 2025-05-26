@@ -15,7 +15,7 @@ public class MessagePanel
     public void startMessagingInteraction() {
         JOptionPane.showMessageDialog(null,
                 "Welcome to QuickChat",
-                "Funiwe Part 2", JOptionPane.INFORMATION_MESSAGE);
+                "Part 2", JOptionPane.INFORMATION_MESSAGE);
 
         boolean continueMessaging = true;
         while (continueMessaging) {
