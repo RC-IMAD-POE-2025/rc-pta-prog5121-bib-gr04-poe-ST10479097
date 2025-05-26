@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 /**
  * @author Takalani Mudau
  * @see  ST10479097@rcconnect.edu.za 
- * @version part 1 of 3
+ * @version part 2 of 3
  * @since 7 April 2025
  */
 
